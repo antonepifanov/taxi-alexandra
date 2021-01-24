@@ -1,0 +1,104 @@
+/*Обнуление*/
+*{	padding: 0;	margin: 0;	border: 0;}*,*:before,*:after{	-moz-box-sizing: border-box;	-webkit-box-sizing: border-box;	box-sizing: border-box;}:focus,:active{outline: none;}a:focus,a:active{outline: none;}nav,footer,header,aside{display: block;}html,body{height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}input,button,textarea{font-family:inherit;}input::-ms-clear{display: none;}button{cursor: pointer;}button::-moz-focus-inner {padding:0;border:0;}a, a:visited{text-decoration: none;}a:hover{text-decoration: none;}ul li{list-style: none;}img{vertical-align: top;}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: normal;
+   font-style: normal;
+   color:#5e5e5e;
+}
+
+.container {
+   max-width: 1170px;
+   margin:0 auto;
+   padding:0 10px;
+   box-sizing: border-box;
+}
+
+.header{
+   background: url('img/header.jpg') no-repeat center center;
+   background-size: cover;
+   padding:40px 0 25px;
+}
+
+.header-content {
+   display: flex;
+   justify-content: space-between;  
+   align-items: center;
+}
+
+.logo-link {
+   display:block;
+   color:inherit;
+}
+
+.logo {
+   display:block;
+}
+
+.logo-img {
+   width: 200px;
+   height: 110px;
+   display:inline-block;
+   margin-right: 50px;
+}
+
+.logo-title {
+   display: inline-block;
+   width:210px;
+}
+
+.logo-name {
+   font-size:40px;
+}
+.logo-description {
+   font-size: 14px;
+}
+
+.tel span{
+   display: block;
+   margin-bottom: 19px;
+   position:relative;
+}
+
+.tel span a {
+   color:inherit;
+   font-size: 30px;
+}
+
+.tel span::before{
+   content: "";
+   width:14px;
+   height:18px;
+   background-image: url('img/tel.png');
+   position: absolute;
+   left:-25px;
+   top:5px;
+}
+
+
+
+@media screen and (max-width: 719px) {
+   .header-content {
+      flex-direction: column;
+   }
+   .logo-img {
+      width: 100px;
+      height: 55px;
+      margin-right: 30px;
+   }
+   .logo {
+      margin-bottom: 20px;
+      text-align: center;
+   }
+   .logo-title {
+      width:auto;
+      vertical-align: top;
+   }
+   .logo-name {
+      font-size:30px;
+   }
+   .tel span a {
+      font-size: 20px;
+   }
+}
